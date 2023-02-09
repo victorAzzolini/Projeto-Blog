@@ -1,0 +1,196 @@
+/*==============Google Fonts============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  /*==============Project Colors============*/
+  --nav-bar: #D9967E;
+  --title-color: #733B27;
+  --subtitle-color: #BF612A;
+  --text-color: #000000;
+  --details-color: #025949;
+  --background-color: #eee8e8;
+
+  /*==============Project Colors============*/
+  --body-font: "Opens Sans", sans-serif;
+
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /*===========Font Weight=========*/
+  --font-normal: 400;
+  --font-light: 300;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+
+  /*===========Margens Bottom=========*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*=========== z index =========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*===========Responsive typography=========*/
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+};
+
+/*=========== BASE =========*/
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, 
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding-top: 4em;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: var(--title-color);
+}
+
+h3 {
+  color: var(--subtitle-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===========REUSABLE CSS CLASSES=========*/
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section_title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color)
+}
+
+.section_subtitle {
+  font-size: var(--h2-font-size);
+  color: var(--subtitle-color);
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+/*=========== LAYOUT =========*/
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem
+}
+
+/*=========== BUTTONS =========*/
+
+.button {
+  display: inline-block;
+  background-color: var(--details-color);
+  color: var(--backgorund-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-normal);
+}
+
+.button:hover {
+  background-color: #013f34;
+}
+
+.button_icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/*=========== BREAKPOINTS =========*/
+/*Large devices*/
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  } 
+}
+/*Medium devices*/
+@media screen and (max-width: 768px) {
+  
+}
+/*Medium to small devices*/
+@media screen and (max-width: 552px) {
+  
+}
+/*Small devices*/
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
