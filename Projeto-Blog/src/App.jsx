@@ -1,8 +1,8 @@
 
 import './App.css'
-import Header from './components/header/Header'
-import Home from './components/home/Home'
-import Blog from './components/blog/Blog'
+import Header from './components/pages/header/Header'
+import Home from './components/pages/home/Home'
+import Blog from './components/pages/blog/Blog'
 
 function App() {
 

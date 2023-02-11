@@ -45,5 +45,5 @@
 
 .nav__item a:hover {
     color: var(--text-color);
-    box-shadow: inset 0px -6px #fa46053a;
+    box-shadow: inset 0px -4px #02594934;
 }

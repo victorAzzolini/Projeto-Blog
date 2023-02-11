@@ -1,0 +1,29 @@
+{
+    "posts": [
+        {
+            "title": "Título do Post",
+            "img": "../../../assets/pexels-mehmet-turgut-kirkgoz-15118224.jpg",
+            "categorie": "cavalos",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat odit, libero rem omnis laboriosam reprehenderit quia ipsam quidem amet illo illum officiis soluta, ab repudiandae, cum beatae totam aperiam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nam, velit dolore aliquam repellendus minima laborum. Quidem atque officiis dolore. Provident quia beatae quos cumque error delectus, culpa autem rem.",
+            "id": 0
+        }
+    ],
+    "categories": [
+        {
+            "id": 0,
+            "name": "Selecione uma opção"
+        },
+        {
+            "id": 1,
+            "name": "Cavalos"
+        },
+        {
+            "id": 2,
+            "name": "Jogos"
+        },
+        {
+            "id": 3,
+            "name": "Programação"
+        }
+    ]
+}
