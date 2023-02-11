@@ -16,6 +16,7 @@
 
 .logo__name {
     font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
 }
 
 .logo__name a {

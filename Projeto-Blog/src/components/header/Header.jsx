@@ -5,7 +5,7 @@ function Header() {
         <header className="header">
             <nav className="nav__bar container">
                 <div className="logo__name">
-                    <a href="/" className="logo__link">Lepetit.blog</a>
+                    <a href="/" className="logo__link">LEPETIT</a>
                 </div>
                 <ul className="nav__list">
                     <li className="nav__item">
