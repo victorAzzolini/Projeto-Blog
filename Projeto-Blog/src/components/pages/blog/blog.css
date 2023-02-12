@@ -5,62 +5,9 @@
 }
 
 .blog__content {
-    background-color: #fff;
     height: auto;
     text-align: center;
-    padding: 2rem;
-}
-
-.post__information {
-    display: flex;
-    flex-direction: row;
-    column-gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0.5em;
-}
-
-.post__img {
-    background-image: url(../../../assets/pexels-mehmet-turgut-kirkgoz-15118224.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    height: 400px;
-    margin-bottom: var(--mb-1);
-}
-
-.post__icon {
-    color: var(--details-color);
-    font-size: calc(var(--normal-font-size) + 0.2rem);
-    margin-right: var(--mb-0-25);
-}
-
-.post__info a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-.post__division {
-    background-color: var(--details-color);
-    margin: 0.5rem auto;
-    height: 2px;
-    width: 200px;
-    margin-top: 2rem;
-}
-
-.post__post {
-    padding: 2rem 2.5rem;
-    text-align: justify;
-}
-
-.post__comments {
-    font-size: calc(var(--normal-font-size) + 0.1rem);
-    background-color: #fff;
-    transition: 0.3s;
-}
-
-.post__comments:hover {
-    box-shadow: inset 0px -4px #02594934;
+    padding: 1rem;
 }
 
 .blog__aside {

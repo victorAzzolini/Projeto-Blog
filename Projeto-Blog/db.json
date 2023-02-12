@@ -2,9 +2,18 @@
     "posts": [
         {
             "title": "Título do Post",
-            "img": "../../../assets/pexels-mehmet-turgut-kirkgoz-15118224.jpg",
-            "categorie": "cavalos",
+            "img": "https://images.pexels.com/photos/15118224/pexels-photo-15118224.jpeg",
+            "categorie": "Cavalos",
             "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat odit, libero rem omnis laboriosam reprehenderit quia ipsam quidem amet illo illum officiis soluta, ab repudiandae, cum beatae totam aperiam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nam, velit dolore aliquam repellendus minima laborum. Quidem atque officiis dolore. Provident quia beatae quos cumque error delectus, culpa autem rem.",
+            "date": "01/02/2022",
+            "id": 0
+        },
+        {
+            "title": "Título do Post",
+            "img": "https://images.pexels.com/photos/13464741/pexels-photo-13464741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "categorie": "Cavalos",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat odit, libero rem omnis laboriosam reprehenderit quia ipsam quidem amet illo illum officiis soluta, ab repudiandae, cum beatae totam aperiam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nam, velit dolore aliquam repellendus minima laborum. Quidem atque officiis dolore. Provident quia beatae quos cumque error delectus, culpa autem rem.",
+            "date": "01/02/2022",
             "id": 0
         }
     ],
