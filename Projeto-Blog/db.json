@@ -1,38 +1,63 @@
 {
-    "posts": [
-        {
-            "title": "Título do Post",
-            "img": "https://images.pexels.com/photos/15118224/pexels-photo-15118224.jpeg",
-            "categorie": "Cavalos",
-            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat odit, libero rem omnis laboriosam reprehenderit quia ipsam quidem amet illo illum officiis soluta, ab repudiandae, cum beatae totam aperiam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nam, velit dolore aliquam repellendus minima laborum. Quidem atque officiis dolore. Provident quia beatae quos cumque error delectus, culpa autem rem.",
-            "date": "01/02/2022",
-            "id": 0
-        },
-        {
-            "title": "Título do Post",
-            "img": "https://images.pexels.com/photos/13464741/pexels-photo-13464741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "categorie": "Cavalos",
-            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat odit, libero rem omnis laboriosam reprehenderit quia ipsam quidem amet illo illum officiis soluta, ab repudiandae, cum beatae totam aperiam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nam, velit dolore aliquam repellendus minima laborum. Quidem atque officiis dolore. Provident quia beatae quos cumque error delectus, culpa autem rem.",
-            "date": "01/02/2022",
-            "id": 0
-        }
-    ],
-    "categories": [
-        {
-            "id": 0,
-            "name": "Selecione uma opção"
-        },
-        {
-            "id": 1,
-            "name": "Cavalos"
-        },
-        {
-            "id": 2,
-            "name": "Jogos"
-        },
-        {
-            "id": 3,
-            "name": "Programação"
-        }
-    ]
+  "posts": [
+    {
+      "title": "Título do Post",
+      "img": "https://images.pexels.com/photos/15118224/pexels-photo-15118224.jpeg",
+      "category": {
+        "id": "1",
+        "name": "Cavalos"
+      },
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat odit, libero rem omnis laboriosam reprehenderit quia ipsam quidem amet illo illum officiis soluta, ab repudiandae, cum beatae totam aperiam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nam, velit dolore aliquam repellendus minima laborum. Quidem atque officiis dolore. Provident quia beatae quos cumque error delectus, culpa autem rem.",
+      "date": "01/02/2022",
+      "id": 0
+    },
+    {
+      "title": "Título do Post",
+      "img": "https://images.pexels.com/photos/13464741/pexels-photo-13464741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": {
+        "id": "1",
+        "name": "Cavalos"
+      },
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat odit, libero rem omnis laboriosam reprehenderit quia ipsam quidem amet illo illum officiis soluta, ab repudiandae, cum beatae totam aperiam?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nam, velit dolore aliquam repellendus minima laborum. Quidem atque officiis dolore. Provident quia beatae quos cumque error delectus, culpa autem rem.",
+      "date": "01/02/2022",
+      "id": 1
+    },
+    {
+      "title": "CAVALOS",
+      "text": "    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus iste non aspernatur error nulla necessitatibus cumque magnam quam, perferendis provident, molestias fugit in commodi voluptatum? Ab animi incidunt cupiditate.",
+      "category": {
+        "id": "1",
+        "name": "Cavalos"
+      },
+      "id": 2
+    },
+    {
+      "title": "Lua ",
+      "text": "A lua em suas dimensões",
+      "img": "https://images.pexels.com/photos/596134/pexels-photo-596134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": {
+        "id": "3",
+        "name": "Programação"
+      },
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "Selecione uma Categoria"
+    },
+    {
+      "id": 1,
+      "name": "Cavalos"
+    },
+    {
+      "id": 2,
+      "name": "Jogos"
+    },
+    {
+      "id": 3,
+      "name": "Programação"
+    }
+  ]
 }

@@ -16,9 +16,7 @@ function Posts() {
         })
         .then((resp) => resp.json())
         .then((data) => {
-            console.log("olá")
             setPosts(data)
-            console.log(data)
         })
         .catch(err => console.log(err))
     }, [])
@@ -32,7 +30,7 @@ function Posts() {
                         <Post 
                             name={post.title}
                             text={post.text}
-                            categorie={post.categorie}
+                            categorie={post.category.name}
                             img={post.img}
                             comments={post.comments}
                             id={post.id}

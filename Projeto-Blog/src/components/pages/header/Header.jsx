@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 import "./header.css"
 
 function Header() {
@@ -5,24 +7,18 @@ function Header() {
         <header className="header">
             <nav className="nav__bar container">
                 <div className="logo__name">
-                    <a href="/" className="logo__link">LEPETIT</a>
+                    <Link to="/" className="logo__link">LEPETIT</Link>
                 </div>
                 <ul className="nav__list">
                     <li className="nav__item">
-                        <a href="/home" className="nav__link">Home</a>
+                        <Link to="/" className="nav__link">Blog</Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link to="/newPost" className="nav__link">Novo Post</Link>
                     </li>
                 
                     <li className="nav__item">
-                        <a href="/blog" className="nav__link">Blog</a>
-                    </li>
-
-                
-                    <li className="nav__item">
-                        <a href="/newText" className="nav__link">Novo Texto</a>
-                    </li>
-                
-                    <li className="nav__item">
-                        <a href="/contact" className="nav__link">Contato</a>
+                        <Link to="/contact" className="nav__link">Contato</Link>
                     </li>
                 </ul>
             </nav>
