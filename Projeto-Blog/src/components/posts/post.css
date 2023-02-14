@@ -19,6 +19,11 @@
     margin-bottom: var(--mb-1);
 }
 
+.post__link {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
 .post__icon {
     color: var(--details-color);
     font-size: calc(var(--normal-font-size) + 0.2rem);
@@ -44,6 +49,11 @@
     margin: 0 auto;
     max-width: 700px;
     margin-bottom: 1.5rem;
+}
+
+.post__buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 .post__comments {

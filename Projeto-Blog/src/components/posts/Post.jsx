@@ -1,35 +1,32 @@
+import {Link} from "react-router-dom"
+
 import "./post.css"
-import svg from "../../../src/assets/pexels-mehmet-turgut-kirkgoz-15118224.jpg" 
 
 function Post({ name, text, categorie, img, date, id }) {
-    const image = img
-
-    console.log(image);
-
-    
-
-
+      
     return (
-        <article className="post__container">
+        <article className="post__container" key={id}>
             <div >
                 <img className="post__img" src={img} alt="cavalos" />
             </div>
-            <h2 className="post__title">{name}</h2>
+            <h2 className="post__title">
+                <Link className="post__link" to={`/${id}`}>{name}</Link>            
+            </h2>
                 <div className="post__information__content">
                     <ul className="post__information">
-                        <li className="post__info calendar">
+                        <li className="post__info calendar" key="0">
                             <i className="uil uil-calender post__icon"></i>
                             <a href="#" className="post-calendar">
                                 {date}
                             </a>
                         </li>
-                        <li className="post__info blog-writer">
+                        <li className="post__info blog-writer" key="1">
                             <i className="uil uil-user post__icon"></i>
                             <a href="#" className="post-writer">
                                 {categorie}
                             </a>
                         </li>
-                        <li className="post__info comments ">
+                        <li className="post__info comments " key="2">
                             <i className="uil uil-comments-alt post__icon"></i>
                             <a href="#" className="post-comments">
                                {id} Comentários 
@@ -43,9 +40,11 @@ function Post({ name, text, categorie, img, date, id }) {
                         {text}
                     </p>
                 </div>
-                <button className="post__comments">
-                    Comentários
-                </button>
+                <div className="post__buttons">
+                    <button className="post__comments">
+                        Comentários
+                    </button>
+                </div>
         </article>
     )
 }

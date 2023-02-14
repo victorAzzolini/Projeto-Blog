@@ -1,0 +1,36 @@
+.page__post {
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.post__alert__remove {
+    background-color: #fff;
+    z-index: 1000;
+    position: absolute;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.281);
+}
+
+.post__alert__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.post__alert__buttons button {
+    background-color: #fff;
+    font-size: var(--h2-font-size);
+}
+
+.post__alert__buttons button:hover {
+    box-shadow: inset 0px -4px #0259495d;
+}

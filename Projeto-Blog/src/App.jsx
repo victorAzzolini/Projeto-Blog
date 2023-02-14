@@ -6,7 +6,7 @@ import Home from './components/pages/home/Home'
 import Blog from './components/pages/blog/Blog'
 import NovoPost from "./components/pages/novoPost/NovoPost"
 import Contato from "./components/pages/contact/Contact"
-import Container from "./components/layouts/Container"
+import PagePost from "./components/posts/PagePost"
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
             <Route exact path="/" element={<Blog />}/>
             <Route path="/newPost" element={<NovoPost />}/>
             <Route path="/contact" element={<Contato />}/>
+            <Route path="/:id" element={<PagePost />}/>
           </Routes>
       </Router>
   )
