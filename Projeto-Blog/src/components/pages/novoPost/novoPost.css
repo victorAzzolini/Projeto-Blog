@@ -44,9 +44,13 @@
     margin-bottom: var(--mb-1);
 }
 
+.create__post__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .create__post button {
-    width: 90px;
-    align-self: flex-end;
     font-size: calc(var(--normal-font-size) + 0.1rem);
     background-color: #fff;
     transition: 0.3s;
@@ -56,3 +60,34 @@
     box-shadow: inset 0px -4px #0259495d;
 }
 
+.create__post a {
+    font-size: calc(var(--normal-font-size) + 0.1rem);
+    transition: 0.3s;
+}
+
+.create__post a:hover {
+    cursor: pointer;
+    box-shadow: inset 0px -4px #0259495d;
+}
+
+.create__post__category-box label{
+    display: block;
+    margin-bottom: var(--mb-1);
+}
+
+.create__post__category-box input{
+    width: 70%;
+    margin-bottom: var(--mb-1);
+    padding: 0.3rem;
+}
+
+.create__post__category-box__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.create__post__category-box__buttons button {
+    width: fit-content;
+    justify-self: flex-start;
+}

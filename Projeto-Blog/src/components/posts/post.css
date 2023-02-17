@@ -1,7 +1,11 @@
 .post__container {
     background-color: #fff;
+    width: 866px;
     margin-bottom: 2rem;
     padding: 0.5rem 0.5rem 3rem 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .post__information {
@@ -17,6 +21,10 @@
     width: 850px;
     height: 485px;
     margin-bottom: var(--mb-1);
+}
+
+.post__title {
+    margin: 0 auto;
 }
 
 .post__link {
@@ -52,6 +60,7 @@
 }
 
 .post__buttons {
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }

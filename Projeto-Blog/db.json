@@ -20,6 +20,49 @@
       },
       "date": "2/14/2023",
       "id": 4
+    },
+    {
+      "title": "Por que é importante praticar mindfulness",
+      "text": "O mindfulness é uma prática milenar que tem ganhado cada vez mais popularidade nos dias de hoje. Trata-se de uma técnica de meditação que consiste em prestar atenção plena ao momento presente, sem julgamentos ou distrações.",
+      "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": {
+        "id": "2",
+        "name": "Jogos"
+      },
+      "date": "2/14/2023",
+      "id": 4
+    },
+    {
+      "title": "Por que é importante praticar mindfulness",
+      "text": "O mindfulness é uma prática milenar que tem ganhado cada vez mais popularidade nos dias de hoje. Trata-se de uma técnica de meditação que consiste em prestar atenção plena ao momento presente, sem julgamentos ou distrações.",
+      "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": {
+        "id": "2",
+        "name": "Programação"
+      },
+      "date": "2/14/2023",
+      "id": 4
+    },
+    {
+      "title": "Por que é importante praticar mindfulness",
+      "text": "O mindfulness é uma prática milenar que tem ganhado cada vez mais popularidade nos dias de hoje. Trata-se de uma técnica de meditação que consiste em prestar atenção plena ao momento presente, sem julgamentos ou distrações.",
+      "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": {
+        "id": "2",
+        "name": "Programação"
+      },
+      "date": "2/14/2023",
+      "id": 4
+    },
+    {
+      "img": "fasfdasf",
+      "title": "fdasfasdf",
+      "category": {
+        "id": "1",
+        "name": "Cavalos"
+      },
+      "date": "2/17/2023",
+      "id": 5
     }
   ],
   "categories": [

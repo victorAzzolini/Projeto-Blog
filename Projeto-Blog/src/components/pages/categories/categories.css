@@ -1,0 +1,51 @@
+.categories__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.categories{
+    background-color: #fff;
+    width: 866px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: var(--mb-1);
+}
+
+.categories label {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+    color: var(--subtitle-color);
+    margin-bottom: var(--mb-1);
+}
+
+.categories__choose {
+    display: flex;
+    align-items: center;
+    
+}
+
+.categories__choose select {
+    width: 20rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.categories__choose button {
+    font-size: calc(var(--normal-font-size) + 0.2rem);
+    background-color: #fff;
+    border: 0.5px solid var(--details-color);
+    padding: 0 1rem;
+    color: var(--details-color);
+    border-radius: 0.4rem;
+    align-self: center;
+    transition: 0.2s;
+}
+
+.categories__choose button:hover {
+    background-color: var(--details-color);
+    color: white;
+}

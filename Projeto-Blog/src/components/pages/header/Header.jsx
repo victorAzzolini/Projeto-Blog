@@ -16,7 +16,9 @@ function Header() {
                     <li className="nav__item">
                         <Link to="/newPost" className="nav__link">Novo Post</Link>
                     </li>
-                
+                    <li className="nav__item">
+                        <Link to="/categories" className="nav__link">Categorias</Link>
+                    </li>
                     <li className="nav__item">
                         <Link to="/contact" className="nav__link">Contato</Link>
                     </li>

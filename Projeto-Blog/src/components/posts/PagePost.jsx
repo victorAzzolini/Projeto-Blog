@@ -113,13 +113,17 @@ function PagePost() {
                 </div>
             </article>
             {alertMessage && (
-                <div className="post__alert__remove">
-                <h2>Você tem ceterza que deseja remover o post?</h2>
-                <div className="post__alert__buttons">
-                    <button onClick={removePost}>Sim</button>
-                    <button onClick={() => setAlertMessage(!alertMessage)}>Não</button>
-                </div>
-            </div>
+                
+                    <div className="post__alert__remove">
+                        <h2>Você tem ceterza que deseja remover o post?</h2>
+                        <div className="post__alert__buttons">
+                            <button onClick={removePost}>Sim</button>
+                            <button onClick={() => setAlertMessage(!alertMessage)}>Não</button>
+                        </div>
+                    </div>
+               
+                
+                
             )}
             
         </div>
