@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react"
 import Post from "../../posts/Post"
 
+
 import "./categories.css"
+import CategoriesAside from "./CategoriesAside"
 
 function Categories() {
     const [categories, setCategories] = useState([])
     const [posts, setPosts] = useState([])
-    const [category, setCategory] = useState({})
+    const [category, setCategory] = useState("Programação")
 
     useEffect(()  => {
         fetch('http://localhost:5000/categories', {
@@ -23,7 +25,6 @@ function Categories() {
     },[])
          
     function getPosts(e) {
-        e.preventDefault()
         
         fetch('http://localhost:5000/posts', {
             method: 'GET',
@@ -33,56 +34,66 @@ function Categories() {
         })
         .then((resp) => resp.json())
         .then((data) => {
-            console.log(category)
             setPosts(data.filter((post) => post.category.name == category))     
         })
         .catch((err) => console.log(err))
     }
 
     function handleCategoryChange(e) {
-        setCategory(e.target.options[e.target.selectedIndex].text)
+        e.preventDefault()
+        setCategory(e.target.text)
+        getPosts()
+        console.log(category)
     }
 
     return(
         <div className="categories__div">
             <div className="categories__container">
-            <form className="categories" onSubmit={getPosts}>
-                <label htmlFor="categories">
-                    Escolha uma Categoria:
-                </label>
-                <div className="categories__choose">
-                <select 
-                    className="create__post__categories"  
-                    name="categories"
-                    onChange={handleCategoryChange}
-                >
-                    {categories.length > 0 &&
-                        categories.map((category) => (
-                            <option value={category.id} key={category.id}>
-                                {category.name}
-                            </option>
-                        ))
-                    }
-                </select>
-                    <button type="submit">
-                        <i className="uil uil-search"></i>
-                    </button>
-                </div>
-            </form>
-            {posts.length > 0 && (
-                posts.map((post) => (
-                    <Post 
-                        name={post.title}
-                        text={post.text}
-                        categorie={post.category.name}
-                        img={post.img}
-                        comments={post.comments}
-                        id={post.id}
-                        date={post.date}
-                    />
-                ))
-            )}
-        </div>
+                {posts.length > 0 && (
+                    posts.map((post) => (
+                        <Post 
+                            name={post.title}
+                            text={post.text}
+                            categorie={post.category.name}
+                            img={post.img}
+                            comments={post.comments}
+                            id={post.id}
+                            date={post.date}
+                        />
+                    ))
+                )}
+                
+            </div>
+            <aside>
+                <CategoriesAside />
+                <div className="categories__aside">
+                    <h3>Categorias</h3>
+                    <ul className="categories__list">
+                        {categories.length > 0 && (
+                            categories.map((category) => (
+                                <>
+                                    <li className="categories__item">
+                                        <a
+                                        onClick={handleCategoryChange}  
+                                        href="/categories"
+                                        key={category.id}
+                                        id={category.id}
+                                        >
+                                            {category.name}
+                                        </a>
+                                        <a href="">
+                                            <i className="uil uil-times-square"></i>
+                                        </a>
+                                    </li>
+                                    <div className="categories__division"></div>
+                                </>
+                                
+                                
+                            ))
+                        )}
+                    </ul>
+                </div> 
+            </aside>
         </div>
         
     )

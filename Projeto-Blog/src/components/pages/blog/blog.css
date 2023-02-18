@@ -1,7 +1,7 @@
 .blog {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    margin-top: 5vh;
+    margin-top: 2rem;
 }
 
 .blog__content {
@@ -14,11 +14,34 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    margin-top: 1rem;
 }
 
 .blog__search {
     background-color: #fff;
-    height: 100px;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.blog__search input {
+    padding: 0.2rem;
+}
+
+.blog__search button {
+    font-size: calc(var(--normal-font-size) + 0.2rem);
+    background-color: #fff;
+    border: 0.5px solid var(--details-color);
+    padding: 0 1rem;
+    color: var(--details-color);
+    border-radius: 0.4rem;
+    align-self: center;
+    transition: 0.2s;
+}
+
+.blog__search button:hover {
+    background-color: var(--details-color);
+    color: white;
 }
 
 .blog__posts {

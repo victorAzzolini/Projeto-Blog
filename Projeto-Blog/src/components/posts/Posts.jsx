@@ -15,7 +15,7 @@ function Posts() {
         })
         .then((resp) => resp.json())
         .then((data) => {
-            setPosts(data)
+            setPosts(data.reverse())
         })
         .catch(err => console.log(err))
     }, [])

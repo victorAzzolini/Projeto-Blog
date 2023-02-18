@@ -55,13 +55,11 @@
       "id": 4
     },
     {
-      "img": "fasfdasf",
-      "title": "fdasfasdf",
       "category": {
-        "id": "1",
-        "name": "Cavalos"
+        "id": "6",
+        "name": "jhjhgjghjghjhgj"
       },
-      "date": "2/17/2023",
+      "date": "2/18/2023",
       "id": 5
     }
   ],
@@ -81,6 +79,30 @@
     {
       "id": 3,
       "name": "Programação"
+    },
+    {
+      "name": "fdsafdsafa",
+      "id": 4
+    },
+    {
+      "name": "asfdasfasfafd",
+      "id": 5
+    },
+    {
+      "name": "fdasfasdf",
+      "id": 6
+    },
+    {
+      "name": "fdasfasdffdfa",
+      "id": 7
+    },
+    {
+      "name": "luva",
+      "id": 8
+    },
+    {
+      "name": "luva",
+      "id": 9
     }
   ]
 }

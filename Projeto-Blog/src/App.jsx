@@ -8,6 +8,7 @@ import NovoPost from "./components/pages/novoPost/NovoPost"
 import Categories from "./components/pages/categories/Categories"
 import Contato from "./components/pages/contact/Contact"
 import PagePost from "./components/posts/PagePost"
+import Search from "./components/pages/search/Search"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/categories" element={<Categories />}/>
             <Route path="/contact" element={<Contato />}/>
             <Route path="/:id" element={<PagePost />}/>
+            <Route path="/search" element={<Search />} />
           </Routes>
       </Router>
   )

@@ -1,14 +1,21 @@
+.categories__div {
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
 .categories__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
     margin-top: 2rem;
 }
 
+
 .categories{
     background-color: #fff;
-    width: 866px;
+    max-width: 866px;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -31,7 +38,7 @@
 .categories__choose select {
     width: 20rem;
     padding: 0.5rem;
-    margin: 1rem;
+    margin-right: 1rem;
 }
 
 .categories__choose button {
@@ -48,4 +55,49 @@
 .categories__choose button:hover {
     background-color: var(--details-color);
     color: white;
+}
+
+.categories__aside {
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.categories__aside h3 {
+    margin-bottom: var(--mb-1);
+}
+
+.categories__item {
+    margin-bottom: var(--mb-0-5);
+    margin-left: var(--mb-0-25); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.categories__item i {
+    font-size: calc(var(--normal-font-size) + 0.1rem);
+}
+
+.categories__item i:hover {
+    color: red;
+}
+
+.categories__item a {
+    text-decoration: none;
+    font-weight: var(--font-normal);
+    color: rgb(68, 68, 68);
+}
+
+.categories__item a:hover{
+    color: var(--details-color);
+}
+
+.categories__division {
+    height: 1px;
+    width: 95%;
+    background-color: black;
+    margin-bottom: 0.2rem;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -7,7 +7,6 @@ import "./novoPost.css"
 function NovoPost() {
     const [categories, setCategories] = useState([])
     const [post, setPost] = useState({})
-    const [categoryBox, setCategoryBox] = useState(false)
 
     const navigate = useNavigate()
 
@@ -72,6 +71,8 @@ function NovoPost() {
         createPost(post)
     }
 
+    
+
     return (
         <div className="create__post">
             <h1 className="post__title">Crie um novo Post</h1>
@@ -115,27 +116,11 @@ function NovoPost() {
                     }
                 </select>
                 <div className="create__post__buttons">
-                    <a type="text" onClick={() => setCategoryBox(!categoryBox)}>Nova Categoria</a>
                     <button type="submit">Criar Post</button>
 
                 </div>
-                {categoryBox && (
-                    <form className="create__post__category-box">
-                        <label htmlFor="category__box">
-                            Adicione uma nova categoria:
-                        </label>
-                        <div className="create__post__category-box__buttons">
-                            <input type="text" name="category__box"/>
-                            <button type="submit">
-                            Adicionar
-                            </button>
-                        </div>
-                        
-                    </form>
-                )}
-            </form>
                 
-                    
+            </form>          
         </div>
     )
 }
