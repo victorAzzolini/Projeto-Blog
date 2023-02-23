@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
 
 import "./blog.css"
@@ -8,7 +8,22 @@ import Posts from "../../posts/Posts"
 
 function Blog() {
     const [searchPost, setSearchPost] = useState('')
+    const [recentPosts, setRecentesPosts] = useState([])
     
+    useEffect(() => {
+        fetch('http://localhost:5000/posts', {
+            method: 'GET',
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+        .then((resp) => resp.json())
+        .then((data) => {
+            setRecentesPosts(data.reverse().slice(0, 7))
+            console.log(recentPosts)
+        })
+        .catch(err => console.log(err))
+    }, [])
     
     const navigate = useNavigate()
 
@@ -37,7 +52,21 @@ function Blog() {
                         <i className="uil uil-search"></i>
                     </button>
                 </form>
-                <div className="blog__posts">Recent Posts</div>
+                <div className="blog__posts">
+                    <h3>Recent Posts</h3>
+                    <div className="categories__division"></div>
+                    {recentPosts.length > 0 && 
+                        recentPosts.map((post) => (
+                            <>
+                                <li>
+                                    <a href={`/${post.id}`}>
+                                        {post.title}
+                                    </a>
+                                </li>
+                            </> 
+                        ))
+                    }
+                </div>
             </aside>
         </section>
     )

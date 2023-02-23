@@ -38,7 +38,7 @@
 .nav__item a {
     text-decoration: none;
     color: #424242;
-    font-size: var(--h3-font-size);
+    font-size: calc(var(--normal-font-size) + 0.2rem) ;
     font-weight: var(--font-medium);
     transition: .4s;
 }
@@ -47,3 +47,64 @@
     color: var(--text-color);
     box-shadow: inset 0px -4px #0259495d;
 }
+
+.search {
+    display: none;
+}
+
+.search__space {
+    display: none;
+}
+
+/*=========== BREAKPOINTS =========*/
+/*Large devices*/
+@media screen and (max-width: 992px) {
+    .search {
+        display: block;
+    }
+
+    .search__space {
+        display: inline;
+    }
+
+    .search a{
+        font-size: calc(var(--normal-font-size) + 0.3rem) ;
+        cursor: pointer;
+    }
+    
+    .search__division {
+        height: 1px;
+        width: 85%;
+        margin: 0.3rem auto;
+        background-color:#424242;
+    }
+    
+    .nav__search {
+        background-color: var(--background-color);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .nav__search input {
+        padding: 0.2rem;
+        width: 80%;
+    }
+    
+    .nav__search button {
+        font-size: calc(var(--normal-font-size) + 0.2rem);
+        background-color: #fff;
+        border: 0.5px solid var(--details-color);
+        padding: 0 1rem;
+        color: var(--details-color);
+        border-radius: 0.4rem;
+        align-self: center;
+        transition: 0.2s;
+    }
+    
+    .nav__search button:hover {
+        background-color: var(--details-color);
+        color: white;
+    }
+  }

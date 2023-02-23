@@ -16,39 +16,6 @@
       "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "category": {
         "id": "2",
-        "name": "Jogos"
-      },
-      "date": "2/14/2023",
-      "id": 4
-    },
-    {
-      "title": "Por que é importante praticar mindfulness",
-      "text": "O mindfulness é uma prática milenar que tem ganhado cada vez mais popularidade nos dias de hoje. Trata-se de uma técnica de meditação que consiste em prestar atenção plena ao momento presente, sem julgamentos ou distrações.",
-      "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "category": {
-        "id": "2",
-        "name": "Jogos"
-      },
-      "date": "2/14/2023",
-      "id": 4
-    },
-    {
-      "title": "Por que é importante praticar mindfulness",
-      "text": "O mindfulness é uma prática milenar que tem ganhado cada vez mais popularidade nos dias de hoje. Trata-se de uma técnica de meditação que consiste em prestar atenção plena ao momento presente, sem julgamentos ou distrações.",
-      "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "category": {
-        "id": "2",
-        "name": "Programação"
-      },
-      "date": "2/14/2023",
-      "id": 4
-    },
-    {
-      "title": "Por que é importante praticar mindfulness",
-      "text": "O mindfulness é uma prática milenar que tem ganhado cada vez mais popularidade nos dias de hoje. Trata-se de uma técnica de meditação que consiste em prestar atenção plena ao momento presente, sem julgamentos ou distrações.",
-      "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "category": {
-        "id": "2",
         "name": "Programação"
       },
       "date": "2/14/2023",
@@ -56,53 +23,39 @@
     },
     {
       "category": {
-        "id": "6",
-        "name": "jhjhgjghjghjhgj"
+        "id": "5",
+        "name": "javaScript"
       },
-      "date": "2/18/2023",
+      "title": "JavaScript",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aperiam sequi omnis error dolores, commodi autem fugiat culpa illum, quis quisquam, exercitationem eius! Corporis eos, mollitia quisquam possimus repudiandae omnis.",
+      "img": "https://images.pexels.com/photos/4383298/pexels-photo-4383298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2/23/2023",
       "id": 5
+    },
+    {
+      "title": "Cavalos",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "img": "https://images.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": {
+        "id": "4",
+        "name": "escritorio"
+      },
+      "date": "2/23/2023",
+      "id": 6
     }
   ],
   "categories": [
-    {
-      "id": 0,
-      "name": "Selecione uma Categoria"
-    },
-    {
-      "id": 1,
-      "name": "Cavalos"
-    },
-    {
-      "id": 2,
-      "name": "Jogos"
-    },
     {
       "id": 3,
       "name": "Programação"
     },
     {
-      "name": "fdsafdsafa",
+      "name": "escritorio",
       "id": 4
     },
     {
-      "name": "asfdasfasfafd",
+      "name": "javaScript",
       "id": 5
-    },
-    {
-      "name": "fdasfasdf",
-      "id": 6
-    },
-    {
-      "name": "fdasfasdffdfa",
-      "id": 7
-    },
-    {
-      "name": "luva",
-      "id": 8
-    },
-    {
-      "name": "luva",
-      "id": 9
     }
   ]
 }

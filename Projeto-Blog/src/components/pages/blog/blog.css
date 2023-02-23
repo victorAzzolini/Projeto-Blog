@@ -46,4 +46,36 @@
 
 .blog__posts {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
 }
+
+.blog__posts li{
+    list-style-type: none;
+    margin-left: 0.4rem;
+    
+}
+
+.blog__posts li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.blog__posts li a:hover {
+    color: var(--details-color);
+}
+
+/*=========== BREAKPOINTS =========*/
+/*Large devices*/
+@media screen and (max-width: 992px) {
+    .blog {
+        display: flex;
+    }
+
+    .blog__aside {
+        display: none;
+    }
+  }
+  

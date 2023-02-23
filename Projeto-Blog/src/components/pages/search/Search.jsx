@@ -20,7 +20,7 @@ function Search() {
         })
         .then((resp) => resp.json())
         .then((data) => {
-            setPosts(data.filter((post) => {
+            setPosts(data.reverse().filter((post) => {
                 return (post.text?.toLowerCase().includes(query?.toLocaleLowerCase()) || post.title?.toLocaleLowerCase().includes(query?.toLocaleLowerCase()))
             }))
         })
