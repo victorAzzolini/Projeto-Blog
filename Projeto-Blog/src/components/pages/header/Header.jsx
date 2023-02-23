@@ -39,9 +39,6 @@ function Header() {
                     <li className="nav__item">
                         <Link to={`/categories?=${category}`} className="nav__link">Categorias</Link>
                     </li>
-                    <li className="nav__item">
-                        <Link to="/contact" className="nav__link">Contato</Link>
-                    </li>
                     <li className="nav__item search">
                         <a onClick={() => setSearchDiv(!searchDiv)}>
                             <i className="uil uil-bars"></i>
