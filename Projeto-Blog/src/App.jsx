@@ -8,7 +8,7 @@ import NovoPost from "./components/pages/novoPost/NovoPost"
 import Categories from "./components/pages/categories/Categories"
 import PagePost from "./components/posts/PagePost"
 import Search from "./components/pages/search/Search"
-import Footer from "./components/pages/footer/footer"
+import Footer from "./components/pages/footer/Footer"
 
 function App() {
 
