@@ -1,0 +1,33 @@
+.footer__container {
+    text-align: center;
+    margin-bottom: var(--mb-1);
+    margin-top: 2rem;
+    padding: 5px;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__division {
+    height: 1px;
+    background-color: black;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer__container span {
+    font-size: larger;
+}
+
+.footer__content {
+    margin-top: 1rem;
+}
+
+.footer__container a {
+    text-decoration: none;
+    color: black;
+    font-weight: var(--font-semi-bold);
+}
+
+.footer__container a:hover {
+    color: var(--details-color);
+}

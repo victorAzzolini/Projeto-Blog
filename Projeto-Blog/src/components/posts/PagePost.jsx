@@ -43,6 +43,7 @@ function PagePost() {
 
     function removePost() {
         console.log("hey")
+        window.confirm('Você tem ceterza?')
         fetch(`http://localhost:5000/posts/${id}`, {
             method: 'DELETE',
             headers: {
@@ -82,7 +83,7 @@ function PagePost() {
                         </li>
                         <li className="post__info blog-writer" key="1">
                             <i className="uil uil-user post__icon"></i>
-                            <a href="#" className="post-writer">
+                            <a href={`categories?q=${category.name}`} className="post-writer">
                                 {category.name}
                             </a>
                         </li>
@@ -101,9 +102,6 @@ function PagePost() {
                     </p>
                 </div>
                 <div className="post__buttons">
-                    <button className="post__comments edit">
-                        Editar 
-                    </button>
                     <button className="post__comments">
                         Comentários
                     </button>
@@ -113,7 +111,8 @@ function PagePost() {
                 </div>
             </article>
             {alertMessage && (
-                
+
+                <div className="post__alert__div">
                     <div className="post__alert__remove">
                         <h2>Você tem ceterza que deseja remover o post?</h2>
                         <div className="post__alert__buttons">
@@ -121,6 +120,9 @@ function PagePost() {
                             <button onClick={() => setAlertMessage(!alertMessage)}>Não</button>
                         </div>
                     </div>
+                </div>
+                
+                    
                
                 
                 

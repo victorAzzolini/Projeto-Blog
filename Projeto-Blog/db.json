@@ -1,16 +1,6 @@
 {
   "posts": [
     {
-      "title": "Lua ",
-      "text": "A lua é um objeto celestial que tem fascinado os seres humanos há milhares de anos. Este satélite natural da Terra tem sido objeto de estudo de astrônomos, poetas, músicos e muitas outras pessoas.",
-      "img": "https://images.pexels.com/photos/596134/pexels-photo-596134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "category": {
-        "id": "3",
-        "name": "Programação"
-      },
-      "id": 3
-    },
-    {
       "title": "Por que é importante praticar mindfulness",
       "text": "O mindfulness é uma prática milenar que tem ganhado cada vez mais popularidade nos dias de hoje. Trata-se de uma técnica de meditação que consiste em prestar atenção plena ao momento presente, sem julgamentos ou distrações.",
       "img": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -42,6 +32,17 @@
       },
       "date": "2/23/2023",
       "id": 6
+    },
+    {
+      "category": {
+        "id": "7",
+        "name": "gastronomia"
+      },
+      "title": "Gastronomia",
+      "text": "Lorem lorem lorem lorem",
+      "img": "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "date": "2/24/2023",
+      "id": 7
     }
   ],
   "categories": [
@@ -58,8 +59,8 @@
       "id": 5
     },
     {
-      "name": "asfdasfasfafd",
-      "id": 6
+      "name": "gastronomia",
+      "id": 7
     }
   ]
 }

@@ -6,7 +6,10 @@ import "./novoPost.css"
 
 function NovoPost() {
     const [categories, setCategories] = useState([])
-    const [post, setPost] = useState({})
+    const [post, setPost] = useState({category: {
+        "id": 0,
+        "name": "Default" 
+    }})
 
     const navigate = useNavigate()
 
@@ -84,6 +87,7 @@ function NovoPost() {
                     name="title" 
                     placeholder="Digite o título do Post"
                     onChange={handleChange}
+                    required
                 />
                 <label htmlFor="text">Texto do Post:</label>
                 <textarea 
@@ -91,7 +95,7 @@ function NovoPost() {
                     type="text" 
                     name="text" 
                     placeholder="Digite seu Post..."
-                    onChange={handleChange} 
+                    onChange={handleChange}
                 />
                 <label htmlFor="title">Imagem do Post:</label>
                 <input 
@@ -100,12 +104,14 @@ function NovoPost() {
                     name="img" 
                     placeholder="Cole o link contendo a imagem Post"
                     onChange={handleChange}
+                    required
                 />
                 <label htmlFor="categories">Categorias:</label>
                 <select 
                     className="create__post__categories"  
                     name="categories"
                     onChange={handleCategory}
+                    required
                 >
                     {categories.length > 0 &&
                         categories.map((category) => (

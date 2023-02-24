@@ -25,7 +25,7 @@ function Search() {
             }))
         })
         .catch(err => console.log(err))
-    },[])
+    },[query])
 
     return (
         <div>

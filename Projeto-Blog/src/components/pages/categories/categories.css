@@ -9,6 +9,12 @@
 
 .categories__container {
     margin-top: 2rem;
+    text-align: center;
+}
+
+.categories__img {
+    max-width: 720px;
+    
 }
 
 
@@ -148,10 +154,19 @@
     
 }
 
+.categories__alert__div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .categories__alert__remove {
     background-color: #fff;
     position: absolute;
-    top: 90%;
+    top: 40%;
     left: 25%;
     right: 25%;
     padding: 2rem;

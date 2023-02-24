@@ -22,7 +22,7 @@ function Post({ name, text, categorie, img, date, id }) {
                         </li>
                         <li className="post__info blog-writer" key="1">
                             <i className="uil uil-user post__icon"></i>
-                            <a href="#" className="post-writer">
+                            <a href={`categories?q=${categorie}`} className="post-writer">
                                 {categorie}
                             </a>
                         </li>

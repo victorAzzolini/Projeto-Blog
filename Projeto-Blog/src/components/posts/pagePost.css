@@ -9,11 +9,21 @@
     text-align: center;
 }
 
+.post__alert__div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
 
 .post__alert__remove {
     background-color: #fff;
-    z-index: 100;
     position: absolute;
+    top: 40%;
+    left: 35%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -34,4 +44,24 @@
 
 .post__alert__buttons button:hover {
     box-shadow: inset 0px -4px #0259495d;
+}
+
+/*=========== BREAKPOINTS =========*/
+/*Large devices*/
+@media screen and (max-width: 992px) {
+    .post__alert__remove {
+        background-color: #fff;
+        position: absolute;
+        max-width: 400px;
+        height: 180px;
+        top: 50%;
+        bottom: 50%;
+        left: 25%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.281);
+    }
+    
 }

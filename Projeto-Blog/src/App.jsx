@@ -9,6 +9,7 @@ import Categories from "./components/pages/categories/Categories"
 import Contato from "./components/pages/contact/Contact"
 import PagePost from "./components/posts/PagePost"
 import Search from "./components/pages/search/Search"
+import Footer from "./components/pages/footer/footer"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/:id" element={<PagePost />}/>
             <Route path="/search" element={<Search />} />
           </Routes>
+        <Footer />
       </Router>
   )
 }

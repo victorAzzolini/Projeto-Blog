@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
+
 import Post from "../../posts/Post"
 
-
+import image from "../../../assets/pexels-photo-117843.jpeg"
 import "./categories.css"
 
 
@@ -17,7 +18,6 @@ function Categories() {
     const navigate = useNavigate()
     const [useParams] = useSearchParams()
     const query =  useParams.get('q')
-    let id = -1
 
     useEffect(()  => {
         fetch('http://localhost:5000/categories', {
@@ -107,11 +107,11 @@ function Categories() {
         setIdentify(e.target.id)
         console.log(identify)
     }
-
+    
     return(
         <div className="categories__div">
             <div className="categories__container">
-                {posts.length > 0 && (
+                {posts.length > 0 ? (
                     posts.map((post) => (
                         <Post 
                             name={post.title}
@@ -123,6 +123,18 @@ function Categories() {
                             date={post.date}
                         />
                     ))
+                ): (
+                    <div className="categories__wait">
+                        <Post 
+                            name="Escolha uma Categoria"
+                            text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto hic saepe sit animi repellendus aut enim blanditiis mollitia? Aliquid deserunt, qui enim optio eos placeat vero! Rerum, excepturi mollitia."
+                            categorie="categoria"
+                            img={image}
+                            comments="2"
+                            date="today"
+                            id=""
+                        />
+                    </div>
                 )}
                 
             </div>
@@ -180,13 +192,15 @@ function Categories() {
                 </div> 
             </aside>
             {alertMessage && (
-                <div className="categories__alert__remove">
-                    <h2>Você tem ceterza que deseja remover a categoria?</h2>
-                    <div className="categories__alert__buttons">
-                        <button onClick={deleteCategory}>Sim</button>
-                        <button onClick={() => setAlertMessage(!alertMessage)}>Não</button>
+                <div className="categories__alert__div">
+                    <div className="categories__alert__remove">
+                        <h2>Você tem ceterza que deseja remover a categoria?</h2>
+                        <div className="categories__alert__buttons">
+                            <button onClick={deleteCategory}>Sim</button>
+                            <button onClick={() => setAlertMessage(!alertMessage)}>Não</button>
+                        </div>
                     </div>
-                </div>
+                </div> 
             )}
         </div>
     )
