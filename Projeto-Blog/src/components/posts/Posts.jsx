@@ -34,6 +34,7 @@ function Posts() {
                             comments={post.comments}
                             id={post.id}
                             date={post.date}
+                            key={post.id}
                         />
                     ))
                 }

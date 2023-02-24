@@ -121,6 +121,7 @@ function Categories() {
                             comments={post.comments}
                             id={post.id}
                             date={post.date}
+                            key={post.id}
                         />
                     ))
                 ): (
@@ -164,7 +165,7 @@ function Categories() {
                     <ul className="categories__list">
                         {categories.length > 0 && (
                             categories.map((category) => (
-                                <>
+                                <div key={category.id}>
                                     <li className="categories__item">
                                         <a
                                         onClick={handleCategoryChange}  
@@ -183,7 +184,7 @@ function Categories() {
                                         </a>
                                     </li>
                                     <div className="categories__division"></div>
-                                </>
+                                </div>
                                 
                                 
                             ))

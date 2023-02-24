@@ -43,16 +43,16 @@ function Header() {
                     <Link to="/" className="logo__link">LEPETIT</Link>
                 </div>
                 <ul className="nav__list">
-                    <li className="nav__item">
+                    <li className="nav__item" key="0">
                         <Link to="/" className="nav__link">Blog</Link>
                     </li>
-                    <li className="nav__item">
+                    <li className="nav__item" key="1">
                         <Link to="/newPost" className="nav__link">Novo Post</Link>
                     </li>
-                    <li className="nav__item">
+                    <li className="nav__item" key="2">
                         <Link to={`/categories`} className="nav__link">Categorias</Link>
                     </li>
-                    <li className="nav__item search">
+                    <li className="nav__item search" key="3">
                         <a onClick={() => setSearchDiv(!searchDiv)}>
                             <i className="uil uil-bars"></i>
                         </a> 

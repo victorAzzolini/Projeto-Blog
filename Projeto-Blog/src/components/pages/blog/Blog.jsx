@@ -7,7 +7,7 @@ import Posts from "../../posts/Posts"
 
 
 function Blog() {
-    const [searchPost, setSearchPost] = useState('')
+    const [searchPost, setSearchPost] = useState()
     const [recentPosts, setRecentesPosts] = useState([])
     
     useEffect(() => {
@@ -57,13 +57,13 @@ function Blog() {
                     <div className="categories__division"></div>
                     {recentPosts.length > 0 && 
                         recentPosts.map((post) => (
-                            <>
-                                <li>
-                                    <a href={`/${post.id}`}>
+                            <div key={post.id}>
+                                <li key={post.id}>
+                                    <a href={`/${post.id}`} >
                                         {post.title}
                                     </a>
                                 </li>
-                            </> 
+                            </div> 
                         ))
                     }
                 </div>
