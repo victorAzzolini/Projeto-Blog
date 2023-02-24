@@ -5,7 +5,6 @@ import "./header.css"
 
 function Header() {
     const [searchPosts, setSearchPosts] = useState()
-    const [category, setCategory] = useState({})
     const [searchDiv, setSearchDiv] = useState(false)
 
     const navigate = useNavigate()
