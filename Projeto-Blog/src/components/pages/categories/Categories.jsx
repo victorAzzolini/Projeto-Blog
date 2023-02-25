@@ -20,7 +20,7 @@ function Categories() {
     const query =  useParams.get('q')
 
     useEffect(()  => {
-        fetch('http://localhost:5000/categories', {
+        fetch('https://lepetit-json-server.vercel.app/categories', {
             method: 'GET',
             headers: {
                 'Cotent-type': 'application/json'
@@ -34,7 +34,7 @@ function Categories() {
     },[change])
 
     useEffect(() => {
-        fetch('http://localhost:5000/posts', {
+        fetch('https://lepetit-json-server.vercel.app/posts', {
         method: 'GET',
         headers: {
             'Content-type': 'application/json'
@@ -66,7 +66,7 @@ function Categories() {
     function createCategory(e){
         e.preventDefault()
 
-        fetch('http://localhost:5000/categories', {
+        fetch('https://lepetit-json-server.vercel.app/categories', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -84,7 +84,7 @@ function Categories() {
     function deleteCategory() {
         console.log(identify)
 
-        fetch(`http://localhost:5000/categories/${identify}`, {
+        fetch(`https://lepetit-json-server.vercel.app/categories/${identify}`, {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json'

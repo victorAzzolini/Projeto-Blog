@@ -17,7 +17,7 @@ function NovoPost() {
     const date = new Date(timeElapsed)
 
     useEffect(() => {
-        fetch('http://localhost:5000/categories', {
+        fetch('https://lepetit-json-server.vercel.app/categories', {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json'
@@ -36,7 +36,7 @@ function NovoPost() {
 
         post.date = date.toLocaleDateString()
 
-        fetch('http://localhost:5000/posts', {
+        fetch('https://lepetit-json-server.vercel.app/posts', {
             method: 'POST',
             headers: {
                 'Content-type' : 'application/json'

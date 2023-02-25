@@ -14,7 +14,7 @@ function PagePost() {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/posts/${id}`, {
+        fetch(`https://lepetit-json-server.vercel.app/posts/${id}`, {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json'

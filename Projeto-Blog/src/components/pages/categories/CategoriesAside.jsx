@@ -16,7 +16,7 @@ function CategoriesAside() {
     function createCategory(e){
         e.preventDefault()
 
-        fetch('http://localhost:5000/categories', {
+        fetch('https://lepetit-json-server.vercel.app/categories', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

@@ -10,7 +10,7 @@ function Header() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/categories`, {
+        fetch(`https://lepetit-json-server.vercel.app/categories`, {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json'

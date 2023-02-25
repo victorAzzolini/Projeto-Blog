@@ -7,7 +7,7 @@ function Posts() {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/posts', {
+        fetch('https://lepetit-json-server.vercel.app/posts', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
