@@ -10,6 +10,7 @@ function Blog() {
     const [searchPost, setSearchPost] = useState()
     const [recentPosts, setRecentesPosts] = useState([])
     
+    console.log('oi')
     useEffect(() => {
         fetch('https://lepetit-json-server.vercel.app/posts', {
             method: 'GET',
